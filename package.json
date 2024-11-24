@@ -1,0 +1,56 @@
+{
+  "name": "stipula",
+  "version": "0.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmon/slotted"
+  },
+  "keywords": [],
+  "author": "Alireza Hamoony <ubtik@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmon/slotted/issues"
+  },
+  "homepage": "https://github.com/hmon/slotted#readme",
+  "peerDependencies": {
+    "react": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.12",
+    "babel-plugin-tester": "^11.0.4",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "rollup": "^4.24.0",
+    "rollup-plugin-license": "^3.5.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "dist"
+  ]
+}
